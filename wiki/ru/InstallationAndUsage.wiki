@@ -1,0 +1,20 @@
+#summary Как установить и начать использовать этот Мод.
+#labels Featured,Phase-Deploy
+
+= Aegisub =
+
+Скопируйте VSFilterMod.dll в папку C:\Program Files\Aegisub\csri, запустите Aegisub, откройте окно настроек, выберите вкладку Видео и смените провайдер субтитров на csri/vsfiltermod_textsub.
+
+*Внимание.* Aegisub не знает о новый тегах поэтому он удалит их или заменит на известные когда вы попробуете воспользоваться средствами визуального оформления.
+
+= Avisynth =
+
+Скопируйте VSFilterMod.dll в папку по умолчанию плагинов Avisynth (C:\Program Files\Avisynth 2.5\plugins) или загрузите его при помощи функции LoadPlugin(). Мод предоставляет функции аналогичные VSFilter, но с суффиксом "Mod", например TextSubMod().
+
+= DirectShow =
+
+Чтобы использовать VSFilterMod с видео проигрывателями сначала нужно отменить регистрацию установленного VSFilter. Найдите, где он расположен на диске, и выполните "regsvr32 /u Путь\до\VSFilter.dll". После этого расположите VSFilterMod.dll, где вам будет удобно, и выполните "regsvr32 Путь\до\VSFilterMod.dll".
+
+= VirtualDub =
+
+Скопируйте VSFilterMod.dll папку плагинов VirtualDub и смените его расширение на vdf (файл должен называться VSFilterMod.vdf). Выберите TextSubMod из списка фильтров и работайте как обычно.

@@ -30,12 +30,12 @@ Character's baseline obliquity. Rotation anchor depends from style definition an
 == Z coordinate ==
  _\z`<`arg`>`_
 
-Sets z coordinate. It may be signified as a distance from viewer to text. It's noticeable in case of using  \frx and \fry tags. Animatable by \t.
+Sets z coordinate. It may be signified as a distance from screen to text. It's noticeable in case of using \frx and \fry tags. Animatable by \t.
 
 == Distortion ==
  _\distort(u1,v1,u2,v2,u3,v3)_
 
-Distorts text by moving corner pins to specifed relative coordinates.
+Distorts text by moving corner pins to specifed relative coordinates. Animatable by \t.
 
 *Example*
  http://s60.radikal.ru/i167/0905/ac/ce9b31019906.png
@@ -49,7 +49,7 @@ Distorts text by moving corner pins to specifed relative coordinates.
 
  _\rndz`<`arg`>`_
 
-Moves border points on random number of pixels from (-arg,arg) interval in selected direction. It distorts text, turns edges in kinked curves. Almost useless, but might be useful in karaokes. Animatable by \t.
+Moves border points on random number of pixels from (-arg,arg) interval in selected direction. Animatable by \t.
 
 *Example*
 
@@ -95,11 +95,11 @@ It moves subtitle by spline curve trajectory. Functions with three or four base 
 == Shaking == 
  _\jitter(left,right,up,down,period`[,`seed`]`)_
 
-It performs subtitle position shaking. First 4 parameters adjust maximum offset in every direction, fifth parameter sets the initial seed for random number generator so the form shaking will not change upon calls.
+It performs subtitle position shaking. First four parameters adjust maximum offset in every direction, fifth parameter sets shaking period in milliseconds, sixth parameter sets the initial seed for random number generator so the form shaking will not change upon calls. Animatable by \t.
 
 == Moveable vector clip ==
  _\movevc(x1,y1)_
  
  _\movevc(x1,y1,x2,y2`[`,t1,t2`]`)_
 
-It moves vector clips (\clip, \iclip) independently to subtitles (unaffected by \move). Parameters are same to \move. Pixel precision.
+It moves vector clips (\clip, \iclip) independently to subtitles (unaffected by \move or \pos). Parameters are same to \move. Pixel precision.

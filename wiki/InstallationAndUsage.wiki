@@ -9,7 +9,7 @@ Copy VSFilterMod.dll to C:\Program Files\Aegisub\csri directory, than start Aegi
 
 = Avisynth =
 
-Copy VSFilterMod.dll to default Avisynth plugins directory (C:\Program Files\Avisynth 2.5\plugins) or load it with LoadPlugin() function. Mod provides similar to VSFilter functions but with "Mod" suffix e.g. TextSubMod.
+Copy VSFilterMod.dll to default Avisynth plugins directory (C:\Program Files\Avisynth 2.5\plugins) or load it with LoadPlugin() function. Mod provides similar to VSFilter functions but with "Mod" suffix e.g. TextSubMod().
 
 = DirectShow =
 

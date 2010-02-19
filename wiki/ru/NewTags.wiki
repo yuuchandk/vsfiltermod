@@ -35,9 +35,9 @@
 == Искажение ==
  _\distort(u1,v1,u2,v2,u3,v3)_
 
-http://s54.radikal.ru/i144/0905/74/4fa7679d3448.png
- 
 Искажает текст путём перемещения угловых координат. Параметры задаются относительно оригинального размера (1.0). Анимируемо через \t.
+
+http://s54.radikal.ru/i144/0905/74/4fa7679d3448.png
 
 *Пример*
  http://s60.radikal.ru/i167/0905/ac/ce9b31019906.png
@@ -62,9 +62,9 @@ http://s54.radikal.ru/i144/0905/74/4fa7679d3448.png
 
  _\$va(left-top-transparency,right-top-transparency,left-bottom-transparency,right-bottom-transparency)_
 
-http://s56.radikal.ru/i152/0905/8e/6e0b6374e7f9.png 
- 
 Создаёт градиентную заливку на основе угловых цветов или уровней прозрачности. Может тормозить. Анимируемо через \t.
+
+http://s56.radikal.ru/i152/0905/8e/6e0b6374e7f9.png
 
 *Пример*
  http://s56.radikal.ru/i152/0905/e7/fff25b6247fd.png

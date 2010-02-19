@@ -35,9 +35,9 @@ Sets z coordinate. It may be signified as a distance from screen to text. It's n
 == Distortion ==
  _\distort(u1,v1,u2,v2,u3,v3)_
 
-http://s54.radikal.ru/i144/0905/74/4fa7679d3448.png
- 
 Distorts text by moving corner pins to specifed relative coordinates. Animatable by \t.
+
+http://s54.radikal.ru/i144/0905/74/4fa7679d3448.png
 
 *Example*
  http://s60.radikal.ru/i167/0905/ac/ce9b31019906.png
@@ -62,9 +62,9 @@ Moves border points on random number of pixels from (-arg,arg) interval in selec
 
  _\$va(left-top-transparency,right-top-transparency,left-bottom-transparency,right-bottom-transparency)_
 
-http://s56.radikal.ru/i152/0905/8e/6e0b6374e7f9.png
- 
 Creates gradients by using anchor colors or opacity levels. May be slow. Animatable by \t.
+
+http://s56.radikal.ru/i152/0905/8e/6e0b6374e7f9.png
 
 *Example*
  http://s56.radikal.ru/i152/0905/e7/fff25b6247fd.png

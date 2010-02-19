@@ -17,7 +17,7 @@ Similar to aggregate \fscx`<`scale`>`\fscy`<`scale`>`. Animatable by \t.
 Changes text leading. Animatable by \t.
 
 *Example*
- _\fsvp-10_ — move text down on 10 points (from script resolution).
+ http://s57.radikal.ru/i157/0905/b7/7119a48b167e.png
 
 == Baseline obliquity ==
  \frs`<`angle`>`
@@ -35,6 +35,8 @@ Sets z coordinate. It may be signified as a distance from screen to text. It's n
 == Distortion ==
  _\distort(u1,v1,u2,v2,u3,v3)_
 
+http://s54.radikal.ru/i144/0905/74/4fa7679d3448.png
+ 
 Distorts text by moving corner pins to specifed relative coordinates. Animatable by \t.
 
 *Example*
@@ -60,15 +62,17 @@ Moves border points on random number of pixels from (-arg,arg) interval in selec
 
  _\$va(left-top-transparency,right-top-transparency,left-bottom-transparency,right-bottom-transparency)_
 
+http://s56.radikal.ru/i152/0905/8e/6e0b6374e7f9.png
+ 
 Creates gradients by using anchor colors or opacity levels. May be slow. Animatable by \t.
 
 *Example*
  http://s56.radikal.ru/i152/0905/e7/fff25b6247fd.png
 
 == Images instead of color fills ==
- _\$img(path_to_png_file,xoffset,yoffset)_
+ _\$img(path_to_png_file`[`,xoffset,yoffset`]`)_
 
-Replaces color fill with repeated image pattern. Parameters are slashed (/) path to image and fill base offset. Path may be relative to current subtitle file location. Right now VSFilterMod supports only 24 or 32 bit truecolor pngs with or without transparency channel. Offset is animatable by \t. Note that \be and \blur tag will not blur image but only mask which is used to place fill.
+Replaces color fill with repeated image pattern. Parameters are slashed (/) path to image and optional fill's base offset. Path may be relative to current subtitle file location. Also right now VSFilterMod cannot load images attached so subtitles script. VSFilterMod supports only 24 or 32 bit truecolor pngs with or without transparency channel. Offset is animatable by \t. Note that \be and \blur tag will not blur image but only mask which is used to place fill.
 
 *Example*
  

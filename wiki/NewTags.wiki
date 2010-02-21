@@ -72,7 +72,7 @@ http://s56.radikal.ru/i152/0905/8e/6e0b6374e7f9.png
 == Images instead of color fills ==
  _\$img(path_to_png_file`[`,xoffset,yoffset`]`)_
 
-Replaces color fill with repeated image pattern. Parameters are slashed (/) path to image and optional fill's base offset. Path may be relative to current subtitle file location. Also right now VSFilterMod cannot load images attached so subtitles script. VSFilterMod supports only 24 or 32 bit truecolor pngs with or without transparency channel. Offset is animatable by \t. Note that \be and \blur tag will not blur image but only mask which is used to place fill.
+Replaces color fill with repeated image pattern. Parameters are slashed (/) path to image and optional fill's base offset. Path may be relative to current subtitle file location. First VSFilterMod loads attached images and if fails trys to find them localy. VSFilterMod supports only 24 or 32 bit truecolor pngs with or without transparency channel. Offset is animatable by \t. Note that \be and \blur tag will not blur image but only mask which is used to place fill.
 
 *Example*
  
@@ -81,7 +81,7 @@ Replaces color fill with repeated image pattern. Parameters are slashed (/) path
  http://img534.imageshack.us/img534/6879/64529891.png and _{\3vc(&HFF00FF&,&HFFFF00&,&H00FFFF&,&HFFFFFF&)\1img(Z:/subs/as.png,0,0)\pos(300,250)\bord10\p1}m -150 0 b -150 -80 -80 -150 0 -150 80 -150 150 -80 150 -1 150 80 80 150 4 150 -80 150 -150 80 -150 0{\p0}_
 
 == Polar move ==
- _\mover(x1,y1,x2,y2,angle1,angle2,r1,r2`[`,t1,t2`]`)_
+ _\mover(x1,y1,x2,y2,angle1,angle2,radius1,radius2`[`,t1,t2`]`)_
 
 It works like \move but now it's possible to use rounded, oval or spiral trajectories.
 

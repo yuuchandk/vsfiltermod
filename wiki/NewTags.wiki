@@ -92,6 +92,7 @@ It works like \move but now it's possible to use rounded, oval or spiral traject
 
 == Spline-move ==
  _\moves3(x1,x2,x2,y2,x3,y3`[`,t1,t2`]`)_
+
  _\moves4(x1,x2,x2,y2,x3,y3,x4,y4`[`,t1,t2`]`)_
  
 It moves subtitle by spline curve trajectory. Functions with three or four base points are available, they produce cubic or bicubic Bezier curve trajectory.

@@ -34,9 +34,10 @@ Arguments are similar to previous function. Function returns string with drawing
 Arguments are similar to previous function. Function returns table with next fields:
  * _width_;
  * _height_;
+ * _offsetx_;
  * _color`[`x`][`y`]`_;
  * _alpha`[`x`][`y`]`_.
-The result is actualy an array of dots which form the rendered text. Only _`\`blur_ or _`\`be_ tags are allowed in text.
+The result is actualy an array of dots which form the rendered text. _width_, _height_, _offsetx_ values are same to _karahelper.text_extents_ returned values. Only _`\`blur_ or _`\`be_ tags are allowed in text. It's strongly recommended to free memory allocated for table after finishing working with it by writing _rendered_text = nil_.
 
  _*rendered_img = karahelper.loadpng(filename)*_
 
